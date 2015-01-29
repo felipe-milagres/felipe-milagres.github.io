@@ -6,12 +6,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Website name</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
@@ -20,22 +22,104 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+      <header>
+        <section class="profile-picture">
+          <h1 id="user-name">Lorrem Ippsumm</h1>
+          <h2 id="user-profession">Platea dictumst</h2>
+          <img id="user-picture" src="img/profile-pic.png" alt="profile pic" />
+        </section>
+      </header>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+      <main>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <section class="card-wrapper">
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+          <h2 class="card-section">Pellentesque</h2>
+
+          <article class="card">
+            <header> 
+              <h3>Mauris vitae urna</h3>
+            </header>
+            <section class="card-middle-content">
+
+              <p>Class aptent</p>
+              <progress class="progressbar" value="0" data-current="50" max="100"></progress>
+
+              <p>Class aptent</p>
+              <progress class="progressbar" value="0" data-current="10" max="100"></progress>
+
+              <p>Class aptent</p>
+              <progress class="progressbar" value="0" data-current="70" max="100"></progress>
+              
+            </section>
+          </article>
+
+          <article class="card">
+            <header> 
+              <h3>Mauris vitae urna</h3>
+            </header>
+            <section class="card-middle-content">
+
+              <p>Class aptent</p>
+              <progress class="progressbar" value="0" data-current="40" max="100"></progress>
+
+              <p>Class aptent</p>
+              <progress class="progressbar" value="0" data-current="80" max="100"></progress>
+
+              <p>Class aptent</p>
+              <progress class="progressbar" value="0" data-current="95" max="100"></progress>
+
+            </section>
+          </article>
+          
+        </section>
+        
+        
+        <section class="card-wrapper">
+
+          <h2 class="card-section">Pellentesque</h2>
+
+          <article class="card">
+            <header> 
+              <h3>Mauris vitae urna</h3>
+            </header>
+            <section class="card-middle-content">
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam porttitor erat scelerisque semper fringil</p>
+            </section>
+          </article>
+
+          <article class="card">
+            <header> 
+              <h3>Mauris vitae urna</h3>
+            </header>
+            <section class="card-middle-content">
+              <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam porttitor erat scelerisque semper fringil</p>
+            </section>
+          </article>
+
+        </section>
+        
+        <footer>
+          <button type="button" class="btn btn-blue">Click Me!</button>
+        </footer>
+
+
+      </main>
+
+      <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script -->
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.
+      <script>
+          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+          function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+          e.src='//www.google-analytics.com/analytics.js';
+          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+          ga('create','UA-XXXXX-X');ga('send','pageview');
+      </script> -->
     </body>
 </html>
