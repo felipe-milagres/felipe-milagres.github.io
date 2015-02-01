@@ -1,10 +1,16 @@
-﻿$green: #4CAF50;
+$green: #4CAF50;
 $blue: #2196F3;
 $light-blue: #E3F2FD;
 $white: #FFF;
+$grey: #E0E0E0;
+$black: #000;
+$light-black: #9E9E9E;
 
+
+/* cleaning style */
 body,p,h1,h2,h3{margin:0; padding:0;font-family: 'Roboto', sans-serif;}
 textarea:focus, input:focus, button:focus{ outline: 0; }
+ul { padding: 0; list-style-type: none; margin: 0 }
 
 .profile-picture{
   overflow: hidden;
@@ -57,7 +63,7 @@ textarea:focus, input:focus, button:focus{ outline: 0; }
     background-color: $white;
 
     header{ 
-      padding: 20px 0 10px 15px;
+      padding: 20px 0 0 15px;
       
       h3{ 
         font-weight: 400;
@@ -65,11 +71,11 @@ textarea:focus, input:focus, button:focus{ outline: 0; }
       }
     }
     
-    .card-middle-content { 
-      padding: 0px 15px 15px;
-      
-      p { margin-top: 5px; }
-      
+    // card with progressbar
+    &.card-progressbar{
+        p { margin-top: 5px; }
+        p:first-child{ margin: 0}
+    
         progress {  
           background-color: $light-blue;
           border: 0;
@@ -84,7 +90,49 @@ textarea:focus, input:focus, button:focus{ outline: 0; }
         }  
         progress::-moz-progress-bar {  
           background: #cdeb8e;
-        }        
+        }
+    
+    }// .card-progressbar
+      
+    // card with contact informations
+    &.card-contact{
+
+        li{
+          overflow: hidden;
+          div{ float: left }
+
+          .card-contact-icon{
+            height: 55px;
+            font-size: 22px;
+            width: 10%;
+            line-height: 55px;
+            text-align: center;
+            color: #4CAF50;
+            margin-right: 12px;
+          }
+          .card-contact-text{
+            border-bottom: 1px solid $grey;
+            width: 85%;
+            padding: 8px 0;
+              
+              .small{
+                color: $light-black;
+                font-size: 14px;
+              }
+          }
+
+          &:last-child{
+            .card-contact-text{
+              border: 0;
+              padding: 8px 0 0 0;    
+            }
+          }
+        }
+
+    }// .card-contact
+      
+    .card-middle-content { 
+      padding: 15px;
     }// .card-middle-content
     
   }// .card
