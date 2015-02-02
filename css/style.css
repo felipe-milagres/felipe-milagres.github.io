@@ -98,7 +98,7 @@ ul {
 .card-wrapper .card.card-contact li .card-contact-icon {
   height: 52px;
   font-size: 22px;
-  width: 10%;
+  width: 52px;
   line-height: 52px;
   text-align: center;
   color: #4CAF50;
@@ -107,7 +107,7 @@ ul {
 .card-wrapper .card.card-contact li .card-contact-text {
   /*border-bottom: 1px solid $grey;
   width: 85%;*/
-  padding: 8px 0;
+  padding-top: 5px;
 }
 .card-wrapper .card.card-contact li .card-contact-text .small {
   color: #9E9E9E;
@@ -115,7 +115,9 @@ ul {
 }
 .card-wrapper .card.card-contact li:last-child .card-contact-text {
   border: 0;
-  padding: 8px 0 0 0;
+}
+.card-wrapper .card.card-contact li:last-child {
+  border: 0;
 }
 .card-wrapper .card.card-header-with-icon div {
   float: left;

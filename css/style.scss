@@ -105,7 +105,7 @@ ul { padding: 0; list-style-type: none; margin: 0 }
           .card-contact-icon{
             height: 52px;
             font-size: 22px;
-            width: 10%;
+            width: 52px;
             line-height: 52px;
             text-align: center;
             color: $green;
@@ -114,7 +114,7 @@ ul { padding: 0; list-style-type: none; margin: 0 }
           .card-contact-text{
             /*border-bottom: 1px solid $grey;
             width: 85%;*/
-            padding: 8px 0;
+            padding-top: 5px;
               
               .small{
                 color: $light-black;
@@ -125,12 +125,12 @@ ul { padding: 0; list-style-type: none; margin: 0 }
           &:last-child{
             .card-contact-text{
               border: 0;
-              padding: 8px 0 0 0;    
+              //padding: 8px 0 0 0;    
             }
           }
         }
         li:last-child{
-        
+          border: 0;
         }
 
     }// .card-contact
