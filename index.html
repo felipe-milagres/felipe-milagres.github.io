@@ -10,7 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" href="css/normalize.min.css">
@@ -24,17 +24,49 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-      <header>
+      <header class="profile">
         <section class="profile-picture">
+          <img id="user-picture" src="img/profile-pic.png" alt="profile pic" />
           <h1 id="user-name">Lorrem Ippsumm</h1>
           <h2 id="user-profession">Platea dictumst</h2>
-          <img id="user-picture" src="img/profile-pic.png" alt="profile pic" />
         </section>
+        
+        <section class="profile-contact card-wrapper">
+          <article class="card card-contact">
+            <header> 
+              <h3>Mauris vitae urna</h3>
+            </header>
+            <section class="card-middle-content">
+                <ul>
+                    <li class="cellphone">
+                        <div class="card-contact-icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="card-contact-text">
+                            <p>+00 00 0000-0000</p>
+                            <p class="small">Cellphone</p>
+                        </div>
+                    </li>
+                    <li class="email">
+                        <div class="card-contact-icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="card-contact-text">
+                            <p>exemple@email.com.br</p>
+                            <p class="small">E-mail</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+          </article>
+          
+        </section>        
+        
       </header>
 
-      <main>
+      <main class="main">
 
-        <section class="card-wrapper">
+        <section class="grid card-wrapper">
 
           <h2 class="card-section">Pellentesque</h2>
 
@@ -123,8 +155,7 @@
           
         </section>
         
-        
-        <section class="card-wrapper">
+        <section class="grid card-wrapper">
 
           <h2 class="card-section">Pellentesque</h2>
 
@@ -152,7 +183,6 @@
           <button type="button" class="btn btn-blue">Click Me!</button>
         </footer>
 
-
       </main>
 
       <!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script -->
@@ -163,15 +193,14 @@
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
       <script>
-  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  	ga('create', 'UA-55965010-2', 'auto');
-  	ga('send', 'pageview');
-
-	</script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-55965010-2', 'auto');
+        ga('send', 'pageview');
+      </script>
+      
     </body>
 </html>
 <!--
