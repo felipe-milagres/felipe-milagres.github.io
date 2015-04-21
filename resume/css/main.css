@@ -7,9 +7,11 @@ body{ font-size: 12px; }
 h1,h2{ margin: 0 }
 h1{ font-size: 18px; }
 h2{ font-size: 14px; margin-bottom: 8px }
-article{ margin-top: 15px }  
+article{ margin-top: 15px }
 ul{ padding-left: 40px; }
 
+.container{ width: 790px; padding: 0 }
+.footer-page section{ padding: 0 }
 
 .page {
   width: 210mm;
@@ -25,10 +27,10 @@ ul{ padding-left: 40px; }
     .title{ text-transform: uppercase; }
     p{ margin: 0 }
       .skills ul{ padding-left: 25px; }
-      .skills li{ display: inline-block }
+      /* .skills li{ display: inline-block }
       .skills li:after { content: "," }
       .skills li:first-child:before{ content: "• "; }
-      .skills li:last-child:after{ content: "."}
+      .skills li:last-child:after{ content: "."} */
 
       .work-experience li { margin: 2px 0; }
 
