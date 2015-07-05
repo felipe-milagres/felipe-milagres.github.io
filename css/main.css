@@ -1,6 +1,12 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+::selection {
+  background: #D2DFA1; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #D2DFA1; /* Gecko Browsers */
+}
 
 * { box-sizing: border-box; }
 body{ font-size: 13px; line-height: 160%;}
