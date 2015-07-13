@@ -44,6 +44,24 @@ ul{ padding-left: 40px; }
 
 .list-group{margin:0}
 
+@media (min-width: 767px) and (max-width: 768px){
+    .page {
+      width: 95%;
+    }
+}
+
+@media (max-width: 767px){
+  .container{ width: 85%; }
+  .page {
+    width: 95%;
+    padding: 15px 20px;
+    margin: 2mm auto 16mm;
+  }
+  .subpage {
+    height: 100%;
+  }
+}
+
 /** print style **/
 @page { size: A4; margin: 0; }
 @media print {
@@ -64,4 +82,8 @@ ul{ padding-left: 40px; }
   }
     .subpage{ outline: initial; border: initial; }
         a[href]:after { content: none !important; }
+
+  .hidden-xs {
+    display: block!important;
+  }
 }
